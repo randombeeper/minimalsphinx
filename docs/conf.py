@@ -49,7 +49,8 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'venv']
 # a list of builtin themes.
 #
 #html_theme = 'furo'
-html_theme = "sphinx_immaterial"
+#html_theme = "sphinx_immaterial"
+html_theme = "sphinx_rtd_theme"
 
 html_theme_options = {
     "features": ["toc.follow"],
