@@ -14,13 +14,23 @@ import os
 import sys
 sys.path.insert(0, os.path.abspath('../src'))
 
-extensions = ['sphinx.ext.autodoc']
+# Configuration file for the Sphinx documentation builder.
+#
+# For the full list of built-in configuration values, see the documentation:
+# https://www.sphinx-doc.org/en/master/usage/configuration.html
 
 # -- Project information -----------------------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Pokédex'
-copyright = '2025, jg'
-author = 'jg'
+project = 'jamestesting'
+copyright = '2025, james'
+author = 'james'
+release = 'today'
+
+# -- General configuration ---------------------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
+
+language = 'English'
 
 
 # -- General configuration ---------------------------------------------------
@@ -31,7 +41,6 @@ author = 'jg'
 extensions = [ 'sphinx.ext.autodoc',
                'sphinx.ext.doctest',
                'sphinx.ext.intersphinx',
-               'sphinx_immaterial',
               ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -42,19 +51,18 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'venv']
 
+html_search = True
+html_search_language = 'en'  # or your preferred language
+#html_static_path = ['_static']
 
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-#html_theme = 'furo'
-#html_theme = "sphinx_immaterial"
 html_theme = "sphinx_rtd_theme"
 
-html_theme_options = {
-    "features": ["toc.follow"],
-}
+html_theme_options = {}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

@@ -1,3 +1,2 @@
-sphinx-immaterial
 sphinx_rtd_theme
 
