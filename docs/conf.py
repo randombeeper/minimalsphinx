@@ -41,7 +41,12 @@ language = 'English'
 extensions = [ 'sphinx.ext.autodoc',
                'sphinx.ext.doctest',
                'sphinx.ext.intersphinx',
+               'sphinx_docsearch',
               ]
+
+docsearch_app_id = "Y8ST72RAUQ"
+docsearch_api_key = "df91a3bbadf5fac4a27a794eab9e47d5"
+docsearch_index_name = "minimalsphinxjg"
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
