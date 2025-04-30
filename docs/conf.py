@@ -76,3 +76,8 @@ html_theme_options = {}
 
 # Set up intersphinx maps
 intersphinx_mapping = {'numpy': ('https://numpy.org/doc/stable', None)}
+
+# eliminate index.html duplicate
+on_rtd = os.environ.get('READTHEDOCS') == 'True'
+if on_rtd:
+    html_baseurl = "https://minimalsphinxjg.readthedocs.io/en/latest/"
